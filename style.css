@@ -35,6 +35,7 @@ body {
 
 .menu-icon{
     display: none;
+    font-size: 2rem;
 }
 .nav-items li a {
     text-decoration: none;
@@ -52,10 +53,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 5vw;
 }
 #hero-section h2 {
     font-size: 7vw;
     color: red;
+}
+#hero-section img{
+    height: 10vw;
+    width: 10vw;
 }
 .sidebar {
     position: fixed;
@@ -190,6 +196,7 @@ body {
     background-color: gray;
     color: white;
     border: none;
+    cursor: pointer;
     border-radius: 1vw;
 }
 /* Contact container styling */
@@ -266,7 +273,78 @@ body {
     background-color: #555;
 }
 
+footer {
+  
+    padding: 2rem 0;
+    font-size: 0.9rem;
+}
 
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-about,
+.footer-contact {
+    flex-basis: 45%;
+    margin-bottom: 1.5rem;
+}
+
+.footer-about p,
+.footer-contact p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    padding-top: 1vw;
+}
+
+.footer-contact a {
+    color: #00bfff;
+    text-decoration: none;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    padding: 1rem;
+    font-weight: 800;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Category Section */
+.categories {
+    display: flex;
+    /* justify-content: space-around; */
+    margin: 20px 0;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    border-radius: 8px;
+    gap: 3vw;
+}
+
+.category {
+    text-align: center;
+    padding: .5vw; /* White background for each category */
+    border-radius: 10px;
+ /* Subtle shadow */
+}
+
+.category h3 {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+.category h3:hover{
+     text-decoration: underline;
+}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -292,6 +370,10 @@ body {
     #hero-section h2 {
         font-size: 12vw;
     }
+    #hero-section img{
+        height: 25vw;
+        width: 25vw;
+    }
     #title h1 {
         font-size: 8vw;
     }
@@ -299,7 +381,10 @@ body {
         flex-direction: column;
         align-items: center;
     }
-
+    .product-list img{
+        height: 20vh;
+        width: 18vh;
+    }
     .product-image, .product-details {
         flex-basis: 100%;
     }
@@ -313,5 +398,23 @@ body {
 
     .shop-address, .contact-form {
         flex-basis: 100%;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-about,
+    .footer-contact {
+        flex-basis: 100%;
+        text-align: center;
+    }
+      .categories {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category {
+        margin-bottom: 15px;
     }
 }
