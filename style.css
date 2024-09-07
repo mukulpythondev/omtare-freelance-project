@@ -57,10 +57,12 @@ body {
 }
 #hero-section h2 {
     font-size: 7vw;
-    color: red;
+    color: rgb(31, 31, 31);
+    opacity: .6;
 }
 #hero-section img{
     height: 7vw;
+    border: none;
     width: 7vw;
 }
 .sidebar {
