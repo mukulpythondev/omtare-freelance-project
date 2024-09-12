@@ -78,6 +78,11 @@ body {
     border: none;
     width: 5vw;
 }
+.navbar .logo {
+    display: flex;
+    gap: 3vw;
+    align-items: center;
+}
 .sidebar {
     position: fixed;
     top: 0;
@@ -390,14 +395,14 @@ footer {
         display: block;
     
     }
-    .menu-icon img{
+    /* .menu-icon img{
         height: 10vw;
         width: 10vw;
-    }
-    /* Adjust logo font size for smaller screens */
-    /* .logo h1 {
-        font-size: 6vw;
     } */
+    /* Adjust logo font size for smaller screens */
+    .navbar .logo {
+        gap: 7vw;
+    } 
 
     /* Hero section text adjustment */
     #hero-section h2 {
