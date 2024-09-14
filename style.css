@@ -56,9 +56,9 @@ body {
 }
 #hero-section{
     /* background: linear-gradient(to right, #d3d3d3, rgb(101, 100, 100)); */
-    /* background-image: url("./hero.jpeg"); */
-    background-color: #F5F1E9;
-    /* object-fit: cover; */
+    background-image: url("./hero.jpeg");
+    /* background-color: #F5F1E9; */
+    object-fit: cover;
     height: 40vh;
     width: 100%;
     display: flex;
@@ -70,7 +70,7 @@ body {
     font-size: 3vw;
     text-align: center;
     /* color: rgb(31, 31, 31); */
-    color: black ;
+    color: white ;
 
 }
 .navbar .logo img{
@@ -78,11 +78,11 @@ body {
     border: none;
     width: 5vw;
 }
-.navbar .logo {
+/* .navbar .logo {
     display: flex;
     gap: 3vw;
     align-items: center;
-}
+} */
 .sidebar {
     position: fixed;
     top: 0;
@@ -395,14 +395,14 @@ footer {
         display: block;
     
     }
-    /* .menu-icon img{
+    .menu-icon img{
         height: 10vw;
         width: 10vw;
-    } */
+    }
     /* Adjust logo font size for smaller screens */
-    .navbar .logo {
+    /* .navbar .logo {
         gap: 7vw;
-    } 
+    }  */
 
     /* Hero section text adjustment */
     #hero-section h2 {

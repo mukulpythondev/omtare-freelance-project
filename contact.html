@@ -5,21 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <!-- Remix Icon CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
-    <title>Contact Us</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />    <title>Contact Us</title>
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="logo">
-                <h1>OMTARE</h1>
+               <h1>OMTARE</h1>
+               <!-- <img src="products /IMG-20240716-WA0066.jpg" alt=""> -->
             </div>
-            <div class="menu-icon">
-                <i class="ri-menu-line"></i>
+            <!-- Menu Icon for mobile view using Remix Icon -->
+            <div class="menu-icon" id="menu-icon">
+                <img src="products /IMG-20240716-WA0066.jpg" alt="">
+                <i class="ri-menu-line"></i> <!-- Remix Icon for menu -->
             </div>
             <ul class="nav-items">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="weights.html">Weights</a></li>
+                <li><a href="weights.html">Himalaya Singing Bowl</a></li>
                 <li><a href="figures.html">Figures</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -33,7 +38,7 @@
         </span>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="weights.html">Weights</a></li>
+            <li><a href="weights.html">Himalaya Singing Bowl</a></li>
             <li><a href="figures.html">Figures</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -119,21 +124,6 @@
             <p>&copy; 2024 OMTARE. All Rights Reserved.</p>
         </div>
     </footer>
-    <script>
-        // JavaScript for sidebar functionality
-        const menuIcon = document.querySelector('.menu-icon');
-        const sidebar = document.querySelector('.sidebar');
-        const closeIcon = document.querySelector('.close-icon');
-
-        // Open sidebar when menu icon is clicked
-        menuIcon.addEventListener('click', () => {
-            sidebar.style.right = '0';
-        });
-
-        // Close sidebar when close icon is clicked
-        closeIcon.addEventListener('click', () => {
-            sidebar.style.right = '-100%';
-        });
-    </script>
+    <script type="module" src="index.js"></script>
 </body>
 </html>
